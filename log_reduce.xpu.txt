@@ -1,0 +1,22 @@
+XCCL /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libbkcl.so loaded
+[15:30:01][INFO][BKCL][globals.cpp:95] set BKCL timeout to 600 seconds
+[15:30:01][INFO][BKCL][globals.cpp:96] set BKCL RING BUFFER SIZE to 1048576
+XPURT /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libxpurt.so.1 loaded
+Hint: Your machine support AVX, but the installed paddlepaddle doesn't have avx core. Hence, no-avx core with worse performance will be imported.
+If you like, you could reinstall paddlepaddle by 'python -m pip install --force-reinstall paddlepaddle-gpu[==version]' to get better performance.
+I0408 15:30:02.370008 55219 api.cc:29578] gaussian API kernel key: [XPU, Undefined(AnyLayout), float32]
+I0408 15:30:02.370446 55219 api.cc:29585] gaussian kernel: {"input":[],"output":["XPU, NCHW, float32"],"attribute":["IntArray","float","float","int","DataType"]}
+W0408 15:30:02.370510 55219 xpu_context.cc:169] Please NOTE: xpu device: 0
+autotune_file fc {} not exist
+I0408 15:30:02.372540 55219 api.cc:34100] sum API kernel key: [XPU, NCHW, float32]
+I0408 15:30:02.372562 55219 api.cc:34107] sum kernel: {"input":["XPU, NCHW, float32"],"output":["XPU, NCHW, Undefined"],"attribute":["IntArray","DataType","bool"]}
+I0408 15:30:02.372817 55219 api.cc:32187] prod API kernel key: [XPU, NCHW, float32]
+I0408 15:30:02.372828 55219 api.cc:32194] prod kernel: {"input":["XPU, NCHW, float32"],"output":["XPU, NCHW, float32"],"attribute":["IntArray","bool","bool"]}
+PaddlePaddle Version: 2.5.2
+x: Tensor(shape=[2, 4], dtype=float32, place=Place(xpu:0), stop_gradient=True,
+       [[ 0.60180217, -0.97918385, -1.15687585,  0.31800225],
+        [ 0.03415874,  0.48726943, -0.53081363, -2.52648854]])
+sum(x): Tensor(shape=[4], dtype=float32, place=Place(xpu:0), stop_gradient=True,
+       [ 0.63596094, -0.49191442, -1.68768954, -2.20848632])
+prod(x): Tensor(shape=[2], dtype=float32, place=Place(xpu:0), stop_gradient=True,
+       [0.21678784, 0.02232186])

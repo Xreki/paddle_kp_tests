@@ -1,0 +1,28 @@
+XCCL /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libbkcl.so loaded
+[15:28:36][INFO][BKCL][globals.cpp:95] set BKCL timeout to 600 seconds
+[15:28:36][INFO][BKCL][globals.cpp:96] set BKCL RING BUFFER SIZE to 1048576
+XPURT /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libxpurt.so.1 loaded
+Hint: Your machine support AVX, but the installed paddlepaddle doesn't have avx core. Hence, no-avx core with worse performance will be imported.
+If you like, you could reinstall paddlepaddle by 'python -m pip install --force-reinstall paddlepaddle-gpu[==version]' to get better performance.
+I0408 15:28:37.320910 55128 api.cc:29578] gaussian API kernel key: [XPU, Undefined(AnyLayout), float32]
+I0408 15:28:37.321825 55128 api.cc:29585] gaussian kernel: {"input":[],"output":["XPU, NCHW, float32"],"attribute":["IntArray","float","float","int","DataType"]}
+W0408 15:28:37.321975 55128 xpu_context.cc:169] Please NOTE: xpu device: 0
+autotune_file fc {} not exist
+I0408 15:28:37.322885 55128 api.cc:29578] gaussian API kernel key: [XPU, Undefined(AnyLayout), float32]
+I0408 15:28:37.322925 55128 api.cc:29585] gaussian kernel: {"input":[],"output":["XPU, NCHW, float32"],"attribute":["IntArray","float","float","int","DataType"]}
+I0408 15:28:37.325428 55128 api.cc:25254] add API kernel key: [XPU, NCHW, float32]
+I0408 15:28:37.325479 55128 api.cc:25261] add kernel: {"input":["KPS, NCHW, float32","KPS, NCHW, float32"],"output":["KPS, NCHW, float32"],"attribute":[]}
+I0408 15:28:37.326025 55128 api.cc:31270] multiply API kernel key: [XPU, NCHW, float32]
+I0408 15:28:37.326059 55128 api.cc:31277] multiply kernel: {"input":["KPS, NCHW, float32","KPS, NCHW, float32"],"output":["KPS, NCHW, float32"],"attribute":[]}
+PaddlePaddle Version: 2.5.2
+x: Tensor(shape=[2, 4], dtype=float32, place=Place(xpu:0), stop_gradient=True,
+       [[ 0.22404996,  0.74892157, -1.17526948,  1.07385397],
+        [-1.70444930,  0.58417684,  1.54988277, -0.10387273]])
+y: Tensor(shape=[4], dtype=float32, place=Place(xpu:0), stop_gradient=True,
+       [ 0.26918030,  0.29088411, -0.65137285,  0.94281358])
+x+y: Tensor(shape=[2, 4], dtype=float32, place=Place(xpu:0), stop_gradient=True,
+       [[ 0.49323025,  1.03980565, -1.82664227,  2.01666760],
+        [-1.43526900,  0.87506092,  0.89850992,  0.83894086]])
+x*y: Tensor(shape=[2, 4], dtype=float32, place=Place(xpu:0), stop_gradient=True,
+       [[ 0.06030983,  0.21784939,  0.76553863,  1.01244414],
+        [-0.45880416,  0.16992776, -1.00955153, -0.09793262]])
