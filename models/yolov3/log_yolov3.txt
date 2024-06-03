@@ -1,0 +1,37 @@
+XCCL /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libbkcl.so loaded
+[16:34:26][INFO][BKCL][globals.cpp:95] set BKCL timeout to 600 seconds
+[16:34:26][INFO][BKCL][globals.cpp:96] set BKCL RING BUFFER SIZE to 1048576
+XPURT /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libxpurt.so.1 loaded
+Hint: Your machine support AVX, but the installed paddlepaddle doesn't have avx core. Hence, no-avx core with worse performance will be imported.
+If you like, you could reinstall paddlepaddle by 'python -m pip install --force-reinstall paddlepaddle-gpu[==version]' to get better performance.
+Warning: import ppdet from source directory without installing, run 'python setup.py install' to install ppdet firstly
+======================= Modified FLAGS detected =======================
+FLAGS(name='FLAGS_run_kp_kernel', current_value=True, default_value=False)
+=======================================================================
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+loading annotations into memory...
+Done (t=2.95s)
+creating index...
+index created!
+[06/03 16:34:33] ppdet.data.source.coco INFO: Load [25000 samples valid, 0 samples invalid] in file dataset/coco/annotations/instances_train2017.json.
+W0603 16:34:33.662598 75575 xpu_context.cc:169] Please NOTE: xpu device: 0
+autotune_file fc {} not exist
+[06/03 16:34:34] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/.cache/paddle/weights/DarkNet53_pretrained.pdparams
+[06/03 16:34:35] ppdet.engine INFO: Epoch: [0] [   0/3125] learning_rate: 0.000000 loss_xy: 15.909412 loss_wh: 22.283543 loss_obj: 18236.195312 loss_cls: 318.443542 loss: 18592.832031 eta: 0:38:17 batch_cost: 0.7351 data_cost: 0.1976 ips: 10.8834 images/s
+[06/03 16:34:35] ppdet.engine INFO: Epoch: [0] [   1/3125] learning_rate: 0.000000 loss_xy: 27.939119 loss_wh: 46.185539 loss_obj: 8496.325195 loss_cls: 600.746216 loss: 9171.196289 eta: 0:26:52 batch_cost: 0.2970 data_cost: 0.0003 ips: 26.9346 images/s
+[06/03 16:34:35] ppdet.engine INFO: Epoch: [0] [   2/3125] learning_rate: 0.000000 loss_xy: 10.797676 loss_wh: 12.796530 loss_obj: 5055.394043 loss_cls: 214.165421 loss: 5293.153809 eta: 0:21:37 batch_cost: 0.2143 data_cost: 0.0002 ips: 37.3233 images/s
+[06/03 16:34:36] ppdet.engine INFO: Epoch: [0] [   3/3125] learning_rate: 0.000000 loss_xy: 24.002647 loss_wh: 30.714437 loss_obj: 14557.365234 loss_cls: 491.363342 loss: 15103.445312 eta: 0:21:46 batch_cost: 0.4280 data_cost: 0.0002 ips: 18.6901 images/s
+[06/03 16:34:36] ppdet.engine INFO: Epoch: [0] [   4/3125] learning_rate: 0.000000 loss_xy: 13.921832 loss_wh: 18.127615 loss_obj: 12760.353516 loss_cls: 296.733124 loss: 13089.136719 eta: 0:21:32 batch_cost: 0.3961 data_cost: 0.0003 ips: 20.1961 images/s
+[06/03 16:34:37] ppdet.engine INFO: Epoch: [0] [   5/3125] learning_rate: 0.000000 loss_xy: 21.174019 loss_wh: 29.898891 loss_obj: 7084.541504 loss_cls: 483.587708 loss: 7619.202148 eta: 0:20:22 batch_cost: 0.2804 data_cost: 0.0002 ips: 28.5281 images/s
+[06/03 16:34:37] ppdet.engine INFO: Epoch: [0] [   6/3125] learning_rate: 0.000000 loss_xy: 14.679147 loss_wh: 19.694584 loss_obj: 12392.842773 loss_cls: 311.000427 loss: 12738.216797 eta: 0:20:14 batch_cost: 0.3755 data_cost: 0.0002 ips: 21.3033 images/s
+[06/03 16:34:37] ppdet.engine INFO: Epoch: [0] [   7/3125] learning_rate: 0.000000 loss_xy: 8.287308 loss_wh: 13.987917 loss_obj: 15256.683594 loss_cls: 203.211380 loss: 15482.169922 eta: 0:20:47 batch_cost: 0.4737 data_cost: 0.0002 ips: 16.8886 images/s
+[06/03 16:34:38] ppdet.engine INFO: Epoch: [0] [   8/3125] learning_rate: 0.000000 loss_xy: 9.684313 loss_wh: 17.908794 loss_obj: 10214.570312 loss_cls: 230.195938 loss: 10472.359375 eta: 0:20:32 batch_cost: 0.3585 data_cost: 0.0002 ips: 22.3154 images/s
+[06/03 16:34:38] ppdet.engine INFO: Epoch: [0] [   9/3125] learning_rate: 0.000000 loss_xy: 16.852436 loss_wh: 19.818108 loss_obj: 4360.930664 loss_cls: 362.295654 loss: 4759.896484 eta: 0:19:27 batch_cost: 0.1870 data_cost: 0.0012 ips: 42.7877 images/s
+[06/03 16:34:38] ppdet.engine INFO: Epoch: [0] [  10/3125] learning_rate: 0.000000 loss_xy: 15.103243 loss_wh: 22.552732 loss_obj: 4164.836914 loss_cls: 270.555542 loss: 4473.048340 eta: 0:18:41 batch_cost: 0.2132 data_cost: 0.0002 ips: 37.5182 images/s
+[06/03 16:34:39] ppdet.engine INFO: Epoch: [0] [  11/3125] learning_rate: 0.000000 loss_xy: 28.736513 loss_wh: 35.765736 loss_obj: 11487.185547 loss_cls: 572.281128 loss: 12123.968750 eta: 0:18:55 batch_cost: 0.4177 data_cost: 0.0003 ips: 19.1537 images/s
+[06/03 16:34:39] ppdet.engine INFO: Epoch: [0] [  12/3125] learning_rate: 0.000000 loss_xy: 12.571453 loss_wh: 15.577730 loss_obj: 9532.705078 loss_cls: 260.726624 loss: 9821.581055 eta: 0:19:02 batch_cost: 0.3945 data_cost: 0.0020 ips: 20.2765 images/s
+[06/03 16:34:39] ppdet.engine INFO: Epoch: [0] [  13/3125] learning_rate: 0.000000 loss_xy: 26.481462 loss_wh: 31.709408 loss_obj: 10025.828125 loss_cls: 535.645264 loss: 10619.664062 eta: 0:19:19 batch_cost: 0.4456 data_cost: 0.0035 ips: 17.9517 images/s
+[06/03 16:34:40] ppdet.engine INFO: Epoch: [0] [  14/3125] learning_rate: 0.000000 loss_xy: 22.549856 loss_wh: 29.679148 loss_obj: 3902.495605 loss_cls: 480.245636 loss: 4434.970215 eta: 0:18:54 batch_cost: 0.2533 data_cost: 0.0002 ips: 31.5864 images/s
+[06/03 16:34:40] ppdet.engine INFO: Epoch: [0] [  15/3125] learning_rate: 0.000000 loss_xy: 20.484776 loss_wh: 27.043636 loss_obj: 8567.851562 loss_cls: 425.754242 loss: 9041.133789 eta: 0:19:05 batch_cost: 0.4213 data_cost: 0.0002 ips: 18.9890 images/s
+[06/03 16:34:40] ppdet.engine INFO: Epoch: [0] [  16/3125] learning_rate: 0.000000 loss_xy: 13.622602 loss_wh: 17.435083 loss_obj: 2710.089844 loss_cls: 288.055237 loss: 3029.202637 eta: 0:18:33 batch_cost: 0.1957 data_cost: 0.0002 ips: 40.8708 images/s

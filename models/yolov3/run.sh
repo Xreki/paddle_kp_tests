@@ -7,7 +7,7 @@ DETECTION_ROOT=/work/xpu/PaddleDetection
 export FLAGS_run_kp_kernel=1
 
 #show_kernel_info=1
-if [ ${show_kernel_info} = "1" ]; then
+if [ "${show_kernel_info}" = "1" ]; then
   export GLOG_vmodule=api=6,dygraph_api=6
   output_filename=log_yolov3_detail.txt
 else

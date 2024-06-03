@@ -1,0 +1,24 @@
+XCCL /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libbkcl.so loaded
+[16:21:48][INFO][BKCL][globals.cpp:95] set BKCL timeout to 600 seconds
+[16:21:48][INFO][BKCL][globals.cpp:96] set BKCL RING BUFFER SIZE to 1048576
+XPURT /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libxpurt.so.1 loaded
+Hint: Your machine support AVX, but the installed paddlepaddle doesn't have avx core. Hence, no-avx core with worse performance will be imported.
+If you like, you could reinstall paddlepaddle by 'python -m pip install --force-reinstall paddlepaddle-gpu[==version]' to get better performance.
+[INFO][XPURT][xpu_disp_set_profiling_mode:182] Set XPURT PROFILING Mode
+Note this mode could only be used under single process, single thread scenario
+PaddlePaddle Version: 2.5.2
+W0603 16:21:48.738116 74143 xpu_context.cc:169] Please NOTE: xpu device: 0
+autotune_file fc {} not exist
+I0603 16:21:48.738565 74143 api.cc:13274] logical_and API kernel key: [XPU, NCHW, int32]
+I0603 16:21:48.738869 74143 api.cc:13281] logical_and kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_17LogicalAndFunctorIiEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12476 	 9596.923077 ns
+I0603 16:21:48.739034 74143 api.cc:13429] logical_or API kernel key: [XPU, NCHW, int32]
+I0603 16:21:48.739042 74143 api.cc:13436] logical_or kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_16LogicalOrFunctorIiEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12507 	 9620.769231 ns
+I0603 16:21:48.739109 74143 api.cc:13508] logical_xor API kernel key: [XPU, NCHW, int32]
+I0603 16:21:48.739115 74143 api.cc:13515] logical_xor kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_17LogicalXorFunctorIiEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12569 	 9668.461538 ns
+I0603 16:21:48.739177 74143 api.cc:13353] logical_not API kernel key: [XPU, NCHW, int32]
+I0603 16:21:48.739187 74143 api.cc:13360] logical_not kernel: {"input":["KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs27VectorizedElementwiseKernelIbNS0_17LogicalNotFunctorIiEELi1ELi1ELi256EEEvNS_5ArrayIPKcXT1_EEENS4_IPT_XT2_EEEiiiT0_ 	 7740 	 5953.846154 ns
+All API tests pass!

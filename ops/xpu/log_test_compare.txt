@@ -1,0 +1,30 @@
+XCCL /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libbkcl.so loaded
+[16:20:59][INFO][BKCL][globals.cpp:95] set BKCL timeout to 600 seconds
+[16:20:59][INFO][BKCL][globals.cpp:96] set BKCL RING BUFFER SIZE to 1048576
+XPURT /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libxpurt.so.1 loaded
+Hint: Your machine support AVX, but the installed paddlepaddle doesn't have avx core. Hence, no-avx core with worse performance will be imported.
+If you like, you could reinstall paddlepaddle by 'python -m pip install --force-reinstall paddlepaddle-gpu[==version]' to get better performance.
+[INFO][XPURT][xpu_disp_set_profiling_mode:182] Set XPURT PROFILING Mode
+Note this mode could only be used under single process, single thread scenario
+PaddlePaddle Version: 2.5.2
+W0603 16:21:00.221413 73973 xpu_context.cc:169] Please NOTE: xpu device: 0
+autotune_file fc {} not exist
+I0603 16:21:00.221881 73973 api.cc:30276] less_than API kernel key: [XPU, NCHW, int32]
+I0603 16:21:00.222172 73973 api.cc:30283] less_than kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_15LessThanFunctorIibEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12585 	 9680.769231 ns
+I0603 16:21:00.222350 73973 api.cc:30201] less_equal API kernel key: [XPU, NCHW, int32]
+I0603 16:21:00.222375 73973 api.cc:30208] less_equal kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_16LessEqualFunctorIibEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12390 	 9530.769231 ns
+I0603 16:21:00.222450 73973 api.cc:29726] greater_than API kernel key: [XPU, NCHW, int32]
+I0603 16:21:00.222457 73973 api.cc:29733] greater_than kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_18GreaterThanFunctorIibEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12365 	 9511.538462 ns
+I0603 16:21:00.222520 73973 api.cc:29651] greater_equal API kernel key: [XPU, NCHW, int32]
+I0603 16:21:00.222527 73973 api.cc:29658] greater_equal kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_19GreaterEqualFunctorIibEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12292 	 9455.384615 ns
+I0603 16:21:00.222604 73973 api.cc:27750] equal API kernel key: [XPU, NCHW, int32]
+I0603 16:21:00.222609 73973 api.cc:27757] equal kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_12EqualFunctorIibEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12522 	 9632.307692 ns
+I0603 16:21:00.222674 73973 api.cc:31621] not_equal API kernel key: [XPU, NCHW, int32]
+I0603 16:21:00.222682 73973 api.cc:31628] not_equal kernel: {"input":["KPS, NCHW, int32","KPS, NCHW, int32"],"output":["KPS, NCHW, bool"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_15NotEqualFunctorIibEEbLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 12483 	 9602.307692 ns
+All API tests pass!

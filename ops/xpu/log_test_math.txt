@@ -1,0 +1,30 @@
+XCCL /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libbkcl.so loaded
+[16:20:28][INFO][BKCL][globals.cpp:95] set BKCL timeout to 600 seconds
+[16:20:28][INFO][BKCL][globals.cpp:96] set BKCL RING BUFFER SIZE to 1048576
+XPURT /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libxpurt.so.1 loaded
+Hint: Your machine support AVX, but the installed paddlepaddle doesn't have avx core. Hence, no-avx core with worse performance will be imported.
+If you like, you could reinstall paddlepaddle by 'python -m pip install --force-reinstall paddlepaddle-gpu[==version]' to get better performance.
+[INFO][XPURT][xpu_disp_set_profiling_mode:182] Set XPURT PROFILING Mode
+Note this mode could only be used under single process, single thread scenario
+PaddlePaddle Version: 2.5.2
+W0603 16:20:28.655079 73886 xpu_context.cc:169] Please NOTE: xpu device: 0
+autotune_file fc {} not exist
+I0603 16:20:28.655545 73886 api.cc:25254] add API kernel key: [XPU, NCHW, float32]
+I0603 16:20:28.655859 73886 api.cc:25261] add kernel: {"input":["KPS, NCHW, float32","KPS, NCHW, float32"],"output":["KPS, NCHW, float32"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_10AddFunctorIfEEfLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 7169 	 5514.615385 ns
+I0603 16:20:28.656050 73886 api.cc:33948] subtract API kernel key: [XPU, NCHW, float32]
+I0603 16:20:28.656062 73886 api.cc:33955] subtract kernel: {"input":["KPS, NCHW, float32","KPS, NCHW, float32"],"output":["KPS, NCHW, float32"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_15SubtractFunctorIfEEfLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 7239 	 5568.461538 ns
+I0603 16:20:28.656134 73886 api.cc:31270] multiply API kernel key: [XPU, NCHW, float32]
+I0603 16:20:28.656155 73886 api.cc:31277] multiply kernel: {"input":["KPS, NCHW, float32","KPS, NCHW, float32"],"output":["KPS, NCHW, float32"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_15MultiplyFunctorIfEEfLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 7237 	 5566.923077 ns
+I0603 16:20:28.656225 73886 api.cc:27087] divide API kernel key: [XPU, NCHW, float32]
+I0603 16:20:28.656252 73886 api.cc:27094] divide kernel: {"input":["KPS, NCHW, float32","KPS, NCHW, float32"],"output":["KPS, NCHW, float32"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_13DivideFunctorIfvEEfLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 7170 	 5515.384615 ns
+I0603 16:20:28.656322 73886 api.cc:30896] maximum API kernel key: [XPU, NCHW, float32]
+I0603 16:20:28.656351 73886 api.cc:30903] maximum kernel: {"input":["KPS, NCHW, float32","KPS, NCHW, float32"],"output":["KPS, NCHW, float32"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_14MaximumFunctorIfEEfLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 7508 	 5775.384615 ns
+I0603 16:20:28.656412 73886 api.cc:31119] minimum API kernel key: [XPU, NCHW, float32]
+I0603 16:20:28.656448 73886 api.cc:31126] minimum kernel: {"input":["KPS, NCHW, float32","KPS, NCHW, float32"],"output":["KPS, NCHW, float32"],"attribute":[]}
+[XPURT_PROF] _ZN3phi5funcs25VectorizedBroadcastKernelINS0_14MinimumFunctorIfEEfLi2ELi1ELi128ELi0EEEvNS_5ArrayIPKcXT1_EEENS4_IPT0_XT2_EEENS4_IbXT1_EEEjNS4_INS_3kps7details15BroadcastConfigEXT1_EEEiiiT_ 	 7457 	 5736.153846 ns
+All API tests pass!

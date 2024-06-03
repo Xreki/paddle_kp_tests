@@ -10,7 +10,7 @@ DATASET_ROOT=${WORK_ROOT}/dataset/ILSVRC2012
 export FLAGS_run_kp_kernel=1
 
 #show_kernel_info=1
-if [ ${show_kernel_info} = "1" ]; then
+if [ "${show_kernel_info}" = "1" ]; then
   export GLOG_vmodule=api=6,dygraph_api=6
   output_filename=log_resnet50_detail.txt
 else

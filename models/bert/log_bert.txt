@@ -1,0 +1,28 @@
+XCCL /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libbkcl.so loaded
+[16:35:49][INFO][BKCL][globals.cpp:95] set BKCL timeout to 600 seconds
+[16:35:49][INFO][BKCL][globals.cpp:96] set BKCL RING BUFFER SIZE to 1048576
+XPURT /work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/paddle/fluid/../libs/libxpurt.so.1 loaded
+Hint: Your machine support AVX, but the installed paddlepaddle doesn't have avx core. Hence, no-avx core with worse performance will be imported.
+If you like, you could reinstall paddlepaddle by 'python -m pip install --force-reinstall paddlepaddle-gpu[==version]' to get better performance.
+/work/xpu/virtualenvs/paddle_py310_yiqun/lib/python3.10/site-packages/_distutils_hack/__init__.py:26: UserWarning: Setuptools is replacing distutils.
+  warnings.warn("Setuptools is replacing distutils.")
+[32m[2024-06-03 16:35:51,468] [    INFO][0m - Already cached /root/.paddlenlp/models/bert-base-uncased/bert-base-uncased-vocab.txt[0m
+[32m[2024-06-03 16:35:51,481] [    INFO][0m - tokenizer config file saved in /root/.paddlenlp/models/bert-base-uncased/tokenizer_config.json[0m
+[32m[2024-06-03 16:35:51,482] [    INFO][0m - Special tokens file saved in /root/.paddlenlp/models/bert-base-uncased/special_tokens_map.json[0m
+W0603 16:35:51.487828 76474 xpu_context.cc:169] Please NOTE: xpu device: 0
+autotune_file fc {} not exist
+[32m[2024-06-03 16:35:54,782] [    INFO][0m - global step: 1, epoch: 0, batch: 0, loss: 11.104064, avg_reader_cost: 0.02008 sec, avg_batch_cost: 0.39801 sec, avg_samples: 32.00000, ips: 80.39926 sequences/sec,  [0m
+[32m[2024-06-03 16:35:55,112] [    INFO][0m - global step: 2, epoch: 0, batch: 1, loss: 11.157869, avg_reader_cost: 0.00011 sec, avg_batch_cost: 0.32958 sec, avg_samples: 32.00000, ips: 97.09465 sequences/sec,  [0m
+[32m[2024-06-03 16:35:55,466] [    INFO][0m - global step: 3, epoch: 0, batch: 2, loss: 11.173628, avg_reader_cost: 0.00016 sec, avg_batch_cost: 0.35361 sec, avg_samples: 32.00000, ips: 90.49596 sequences/sec,  [0m
+[32m[2024-06-03 16:35:55,797] [    INFO][0m - global step: 4, epoch: 0, batch: 3, loss: 11.123302, avg_reader_cost: 0.00014 sec, avg_batch_cost: 0.33030 sec, avg_samples: 32.00000, ips: 96.88034 sequences/sec,  [0m
+[32m[2024-06-03 16:35:56,172] [    INFO][0m - global step: 5, epoch: 0, batch: 4, loss: 11.165440, avg_reader_cost: 0.00010 sec, avg_batch_cost: 0.37498 sec, avg_samples: 32.00000, ips: 85.33713 sequences/sec,  [0m
+[32m[2024-06-03 16:35:56,503] [    INFO][0m - global step: 6, epoch: 0, batch: 5, loss: 11.215268, avg_reader_cost: 0.00014 sec, avg_batch_cost: 0.33025 sec, avg_samples: 32.00000, ips: 96.89558 sequences/sec,  [0m
+[32m[2024-06-03 16:35:56,831] [    INFO][0m - global step: 7, epoch: 0, batch: 6, loss: 11.198040, avg_reader_cost: 0.00010 sec, avg_batch_cost: 0.32733 sec, avg_samples: 32.00000, ips: 97.75950 sequences/sec,  [0m
+[32m[2024-06-03 16:35:57,221] [    INFO][0m - global step: 8, epoch: 0, batch: 7, loss: 11.095920, avg_reader_cost: 0.00009 sec, avg_batch_cost: 0.38987 sec, avg_samples: 32.00000, ips: 82.07876 sequences/sec,  [0m
+[32m[2024-06-03 16:35:57,566] [    INFO][0m - global step: 9, epoch: 0, batch: 8, loss: 11.135887, avg_reader_cost: 0.00024 sec, avg_batch_cost: 0.34358 sec, avg_samples: 32.00000, ips: 93.13723 sequences/sec,  [0m
+[32m[2024-06-03 16:35:57,894] [    INFO][0m - global step: 10, epoch: 0, batch: 9, loss: 11.075965, avg_reader_cost: 0.00013 sec, avg_batch_cost: 0.32798 sec, avg_samples: 32.00000, ips: 97.56748 sequences/sec,  [0m
+[32m[2024-06-03 16:35:57,898] [    INFO][0m - Configuration saved in ./output/model_10/config.json[0m
+[32m[2024-06-03 16:35:59,190] [    INFO][0m - Model weights saved in ./output/model_10/model_state.pdparams[0m
+[32m[2024-06-03 16:35:59,191] [    INFO][0m - tokenizer config file saved in ./output/model_10/tokenizer_config.json[0m
+[32m[2024-06-03 16:35:59,192] [    INFO][0m - Special tokens file saved in ./output/model_10/special_tokens_map.json[0m
+Namespace(model_type='bert', model_name_or_path='bert-base-uncased', input_dir='./data/wikicorpus_en_seqlen128', output_dir='./output', max_predictions_per_seq=20, batch_size=32, learning_rate=0.0001, weight_decay=0.01, adam_epsilon=1e-06, max_grad_norm=1.0, max_steps=10, preprocessing_num_workers=0, warmup_steps=10000, logging_steps=1, save_steps=20000, seed=42, device='xpu', use_amp=False, amp_level='O2', scale_loss=32768, to_static=False, profiler_options=None, fuse_transformer=False, cinn=False)
